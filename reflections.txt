@@ -1,0 +1,22 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+My thoughts:
+
+What new skills have you learned?
+
+ - I've just refreshed my memory;
+What has been easy?
+ - Easy parts were: the tree, tags, placing images...;
+What has been difficult?
+
+ - Launching Udacity Front End Feedback Extention because it didnt want to test my pages for any reasons;
+How have you used the problem solving strategies from the first project to overcome challenges so far?
+ - In few words i split the problem from badly defined to well defined analyzing and googling. In other words first of all i try to think how well i understand the problem. In case if my problem well defined i just google. But in case opposite case i met poorly defined issue, i parse the one, take a pensil and draw images and objects such a drawing,graphs what i know about it and what it's arranged of. I disassemble the big issue on lesser part and try solve them separetely. In case of success i assemble it together. So that i did with Feedback Extenstion misfunction.

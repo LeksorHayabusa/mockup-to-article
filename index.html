@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Humans vs Machines Blog</title>
+  <!-- why i put some style to this little project, just to practice in creation of svg image from that attached gif. i've just been inspired. Created svg isn't displayed-->
+  <style>
+    body{
+        width: 906px;
+        margin-left: 7px;
+        padding-bottom: 346px;
+    }
+    svg{
+      color:#2e4552;
+    }
+    img{
+      //display: none;
+    }
+    line, circle {
+      stroke:#2e4553;
+    }
+    line{
+      stroke-width:1;
+      opacity: 0.5;
+    }
+    circle{
+      stroke-width:4;
+      fill:white;
+      display: none;
+    }
+    .fillDarkblue{
+      fill:#2e4552;
+    }
+    .strokeBlue{
+      stroke:#19a0c7;
+      height: 100%;
+      width: 100%;
+      fill:url(#myImg);
+    }
+  </style>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script>
+    $(document).ready(
+      function animation(){
+        setInterval(
+          function animationLoop(){
+            setTimeout(
+              function circle(){
+                  $('#circle1').fadeIn(100);
+                } 
+              , 600);
+            setTimeout(
+              function circle(){
+                  $('#circle2').fadeIn(100);
+                }
+              , 1200);
+            setTimeout(
+              function circle(){
+                  $('#circle3').fadeIn(100);
+                }
+              , 1540);
+            setTimeout(
+              function circle(){
+                  $('#circle4').fadeIn(100);
+                }
+              , 1730);
+            setTimeout(
+              function circle(){
+                  $('#circle5, #circle6, #circle7').fadeIn(100);
+                }
+              , 2130);
+            setTimeout(
+              function circle(){
+                  $('#circle8').fadeIn(100);
+                }
+              , 2830); // 8th setTimeout
+            $('#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8').fadeOut(10);
+          } //animation loop brackets
+        , 4000); // total animation setTimeout
+        //animation();
+    });
+
+  </script>
+</head>
+<body>
+  This was adapted from: http://blog.udacity.com/2016/03/humans-vs-machines-an-ai-odyssey-2.html
+  Format this text to match the mockup exactly!
+  <h1>Humans vs. Machines: An AI Odyssey</h1>
+  <p>By <strong><i>Christopher Watkins</i></strong></p>
+  <p>March 10, 2016</p>
+  <p><em><strong>***Breaking News: AlphaGo has won the first two matches!***</strong> In this, the third in our series on the epic Go matches being played between AlphaGo (Google’s Artificial Intelligence software) and Lee Se-Dol (Current Go World Champion), we look at the history of Humans vs. Machines, and the innovations that have led us to this incredible moment in time.</em></p>
+  <img src="http://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif" alt="udacity-intelligence">
+  <svg width='600px' height='250px'>
+    <line x1="81px" y1="0px" x2="81px" y2="250px"></line>
+    <line x1="168px" y1="0px" x2="168px" y2="250px"></line>
+    <line x1="254px" y1="0px" x2="254px" y2="250px"></line>
+    <line x1="342px" y1="0px" x2="342px" y2="250px"></line>
+    <line x1="430px" y1="0px" x2="430px" y2="250px"></line>
+    <line x1="518px" y1="0px" x2="518px" y2="250px"></line>
+    <line x1="0px" y1="82px" x2="600px" y2="82px"></line>
+    <line x1="0px" y1="166px" x2="600px" y2="166px"></line>
+    <circle id='circle1' class="fillDarkblue" cx="81" cy="81" r="40"></circle>
+    <circle id='circle3' class="fillDarkblue" cx="168" cy="81" r="40"></circle>
+    <circle id='circle2' cx="168" cy="166" r="40"></circle>
+    <circle id='circle4' cx="254" cy="166" r="40"></circle>
+    <circle id='circle5' class="fillDarkblue" cx="430" cy="166" r="40"></circle>
+    <circle id='circle6' class="fillDarkblue" cx="517" cy="166" r="40"></circle>
+    <circle id='circle7' cx="430" cy="81" r="40"></circle>
+    <circle id='circle8' class="strokeBlue" cx="343" cy="81" r="40">    </circle>
+    <defs>
+       <pattern id = "myImg" x='0' y='0' height = "1" width = "1" patternContentUnits = "objectBoundingBox">
+            <image xlink:href = "https://www.mediafire.com/convkey/da7c/3k562364lkp63vc6g.jpg" preserveAspectRatio="none" width = "1" height = "1"></image> 
+        </pattern>
+    </defs>
+  </svg>
+      
+  <p>For as long as humans have built things, we’ve wrestled with the implications of what we’ve built. In many cases, these philosophical and ethical wrestlings have made for great drama—think Frankenstein, or 2001: A Space Odyssey. Often, the hypothetical scenarios we envision come remarkably close to true, and the discoveries we’ve made in the fields of Artificial Intelligence and Machine Learning make clear that a “computer with a mind of its own” is <s>going to take over the world</s> not such a fantastic thing to imagine any longer.</p>
+  
+  <h2>The Triumph Of Deep Blue</h2>
+  <p>Perhaps this is why we are so captivated by human vs. machine competitions, because the idea of being overcome by that which we’ve created speaks to something very deep within our collective consciousness. When IBM’s Deep Blue faced off against Garry Kasparov<sup>1</sup>, the event resulted in more than <a href="http://www-03.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/">three billion impressions</a> around the world, and when IBM’s later creation Watson challenged the champions on Jeopardy, millions of viewers were glued to the proceedings.</p>
+  <h2>DeepMind’s AlphaGo</h2>
+  <p>Taking place right now, there is an event that, while not likely to scale the same media heights, may in fact have far greater implications when it comes to the future of “intelligent” machines. On March 9, in Seoul, South Korea, a computing system know as AlphoGo (built by researchers at DeepMind—a Google Artificial Intelligence lab) began <a href="http://venturebeat.com/2016/02/04/youtube-will-livestream-googles-ai-playing-go-superstar-lee-sedol-in-march/">a five-game match</a> against Lee Se-dol, one of the very best players in the world at the ancient game of Go.</p>
+  <p>Why is this so significant?</p>
+  <p>Here is how the DeepMind team explained it in their paper <a href="http://airesearch.com/wp-content/uploads/2016/01/deepmind-mastering-go.pdf">Mastering the Game of Go with Deep Neural Networks and Tree Search</a>:</p>
+  <p>The game of Go has long been viewed as the most challenging of classic games for artificial intelligence due to its enormous search space and the difficulty of evaluating board positions and moves.</p>
+  <p>Put another way, winning at Go is a kind of Holy Grail for those who strive to create machines that can “think” on their own, because success at this uniquely complex game seems to require something more than just skill, knowledge, and experience. It requires intuition. Feel. Style. Characteristics we associate with humans, not with machines.</p>
+  <hr width="100%">
+  <p><sup>1</sup> Garry Kasparov is a Russian chess Grandmaster and former World Chess Champion</p>
+</body>
+</html>
